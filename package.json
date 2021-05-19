@@ -1,0 +1,36 @@
+{
+  "name": "nodeapi_with_orm",
+  "version": "1.0.0",
+  "description": "A basic control system for an English school",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Breno-Martins-Simao/NodeAPI_With_ORM.git"
+  },
+  "keywords": [
+    "NODE.JS",
+    "API",
+    "ORM"
+  ],
+  "author": "Breno Martins Simão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Breno-Martins-Simao/NodeAPI_With_ORM/issues"
+  },
+  "homepage": "https://github.com/Breno-Martins-Simao/NodeAPI_With_ORM#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
