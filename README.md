@@ -29,3 +29,7 @@ If you want to add a new table or model the existant Db Schema you can run the c
 `npx sequelize-cli seed:generate --name demo-person`
 #### How to run a seed with sequelize?
 `npx sequelize-cli db:seed:all`
+
+### Project Pattern
+In this Project, it was implemented the MVC (Model-View-Controller).
+To know more about this pattern, you can click [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwilqcL15dbwAhVur5UCHXRsBNsQFjAAegQIBRAD&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FMVC&usg=AOvVaw0FPLUmFL68pqAh8xUbam29)
