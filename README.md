@@ -20,6 +20,25 @@ You also need:
 
 ## Anotations
 ### Sequelize tips :)
+#### How relations works on Sequelize?
+So, when using Sequelize we have to use some methods to explicit the relation betwee two tables on our database, and the methods are:  
+- The HasOne association (Origin-Destination)
+- The BelongsTo association (Destination-Origin)
+- The HasMany association (Origin-Destination)
+- The BelongsToMany association (Destination-Origin)
+
+For a better Sequelize use, we have to use that methods on our tables that will be the Origin and on our tables that are goind to be the destination of the relation, like:
+
+In our Levels Model (Origin)
+- Levels.hasMany(models.Classes,{
+        foreignKey:'nivel_id'
+      })
+
+In our Classes Model (Destination)
+- Classes.belongsTo(models.Levels)
+
+On the Levels example we use a second parameter for the function *hasMany*, this parameter can also be used with the *hasOne* function, and is responsible to define what it will be our foreign column name
+
 #### How to Create a new Migration and Model with sequelize?
 If you want to add a new table or model the existant Db Schema you can run the command:
 `npx sequelize-cli model:create --name People --attributes name:string,active:boolean,email:string,role:string`
